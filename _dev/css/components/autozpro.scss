@@ -1,0 +1,76 @@
+// Autozpro theme customizations (automotive parts store look)
+
+$header-dark: #1b1f2a;
+$header-dark-hover: #242a38;
+
+// Top bar (nav)
+#header {
+  .header-nav {
+    background: $header-dark;
+    color: $white;
+
+    a,
+    .material-icons {
+      color: rgba($white, 0.85);
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .header-logo {
+    padding: $medium-space 0;
+  }
+}
+
+// Main menu
+#_desktop_top_menu {
+  .top-menu {
+    background: $white;
+
+    [data-depth="0"] {
+      > a {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+}
+
+// Buttons
+.btn-primary {
+  background: $brand-primary;
+  border-color: $brand-primary;
+
+  &:hover,
+  &:focus {
+    background: darken($brand-primary, 8%);
+    border-color: darken($brand-primary, 8%);
+  }
+}
+
+// Product price highlight
+.product-price-and-shipping {
+  .price {
+    color: $brand-primary;
+    font-weight: 700;
+  }
+
+  .regular-price {
+    color: $gray;
+  }
+}
+
+// Promo banners rendered through ps_banner / ps_customtext
+.banner,
+.custom-text {
+  margin-bottom: $medium-space;
+
+  .banner-title,
+  .custom-text-title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
