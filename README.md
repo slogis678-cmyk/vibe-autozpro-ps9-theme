@@ -27,10 +27,20 @@ autozpro/
 
 ## Instalacja
 
-1. Spakuj katalog `autozpro/` do ZIP (lub skopiuj go przez FTP).
-2. W panelu admina: **Wygląd → Motywy → Dodaj nowy motyw** i wgraj ZIP
-   (albo skopiuj katalog do `themes/` i kliknij „Zainstaluj”).
-3. Motyw wymaga PrestaShop **>= 9.0.0** (deklaracja w `config/theme.yml`).
+**Najprościej:** pobierz gotowy ZIP z zakładki
+[Releases](https://github.com/slogis678-cmyk/vibe-autozpro-ps9-theme/releases)
+— archiwum ma pliki konfiguracyjne w korzeniu, tak jak tego wymaga importer
+PrestaShop 9 (`config/theme.yml` musi być w katalogu głównym ZIP-a, bez
+folderu-pośrednika).
+
+1. Panel admina: **Wygląd → Motywy → Dodaj nowy motyw** i wgraj ZIP
+   (albo skopiuj zawartość katalogu do `themes/autozpro/` i kliknij „Zainstaluj”).
+2. Motyw wymaga PrestaShop **>= 9.0.0** (deklaracja w `config/theme.yml`).
+
+> **Uwaga:** jeśli pakujesz ZIP ręcznie, pakuj **zawartość** katalogu motywu
+> (żeby `config/theme.yml` i `config.xml` były w korzeniu archiwum), a nie
+> folder nadrzędny — inaczej importer zgłosi błąd „Brakujący plik
+> konfiguracyjny”.
 
 ## Build (SCSS/JS)
 
